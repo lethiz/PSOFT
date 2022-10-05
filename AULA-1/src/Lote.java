@@ -47,4 +47,9 @@ public class Lote {
     public int hashCode() {
         return Objects.hash(quantidade, data, produto);
     }
+
+    @Override
+    public String toString(){
+        return this.quantidade + ": " + this.produto;
+    }
 }
